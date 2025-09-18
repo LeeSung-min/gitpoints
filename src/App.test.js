@@ -1,8 +1,20 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('renders Gitpoints heading', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const headingElement = screen.getByText(/Gitpoints/i);
+  expect(headingElement).toBeInTheDocument();
+});
+
+test('renders username input', () => {
+  render(<App />);
+  const inputElement = screen.getByPlaceholderText(/Enter username/i);
+  expect(inputElement).toBeInTheDocument();
+});
+
+test('renders analyze button', () => {
+  render(<App />);
+  const buttonElement = screen.getByRole('button', { name: /Analyze/i });
+  expect(buttonElement).toBeInTheDocument();
 });
