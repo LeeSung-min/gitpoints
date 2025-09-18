@@ -1,7 +1,11 @@
 {
-  "name": "my-app",
+  "name": "gitpoints",
   "version": "0.1.0",
   "private": true,
+  "description": "A modern GitHub repository analytics application with advanced code quality metrics",
+  "homepage": "https://gitpoints.vercel.app",
+  "keywords": ["github", "analytics", "code-quality", "repository", "metrics", "react"],
+  "author": "Caleb Lee",
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.8.0",
